@@ -1,0 +1,77 @@
+<html>
+ <head>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://felipesaints13.github.io/genial/scripts.js" rel="stylesheet" />
+    <script href="https://felipesaints13.github.io/genial/style.css" rel="stylesheet"><script/>
+	</head>
+<body>
+    <font face="Bangers">
+    <div class="calculator-container">
+      <h2>Faça uma Simulação!</h2>
+	  <h5>Arraste o Seletor para Simular o Valor Desejado</h5>
+      <div class="input-container">
+        <label for="loanAmount"> Quanto você precisa? &nbsp;</label>
+        <input type="text" face="Bangers" id="loanAmount" value="R$ 1.000,00" readonly> - Reais
+        <br><br>
+        <label for="loanTerm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escolha um prazo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text"  id="loanTerm" value="12" readonly> - Meses
+        <br><br>
+	
+        <label for="loanAmountSlider">Montante do Empréstimo</label>
+        <br>
+        <input type="range" min="1000" max="50000" value="1000" class="slider" id="loanAmountSlider">
+        <br><br>
+        <label for="loanTermSlider">Prazo em Meses</label>
+        <input type="range" min="12" max="84" value="12" class="slider" id="loanTermSlider">
+      </div>
+      <br/><br>
+       <div class="input-container">
+       <label for="loanType">Tipo de Empréstimo:</label>
+       <select id="loanType">
+       <option value="personal">  - </option>
+       <option value="personal">Pessoal</option>
+      <option value="home">Casa</option>
+      <option value="car">Carro</option>
+      </select>
+      <br>
+      <br>
+      </div>
+
+      <!-- Section for bank selection -->
+      <div class="input-container">
+      <label for="bank">Banco Selecionado:</label>
+     <select id="bank">
+     <option value="bank0"> - </option>
+     <option value="bank1">Banco 1</option>
+     <option value="bank2">Banco 2</option>
+     <option value="bank3">Banco 3</option>
+     </select>
+     </div>
+      <br>
+      <br>
+      <button id="calculateBtn">SIMULAR</button>
+      <br> <br>
+         <h3>Por Parcelas de Apenas:<h3>  <span  id="result" class="result" ></span>
+	     <h3>Ou Valor Total de:<h3>  <span id="totalResult" class="totalResult"></span>
+         <div>
+            <br>
+            <div id="whatsapp-container" style="display: none;">
+                <p>
+                  <span>Quer saber qual empréstimo cabe melhor no teu bolso?</span>
+                  <span>Entre em contato:</span>
+                  <br>
+                  <a href="https://wa.me/+5516988335436?text=Olá! Gostaria de saber mais sobre empréstimos.">
+                    <img src="/VFX/logozap.png" alt="WhatsApp Icon" width="64" height="64">
+                  </a>
+                </p>
+              </div>
+              <div class="rodape"> <p><strong>AVISO:</strong> As taxas estão sujeitas a alteração sazonal, dependendo do órgão prestador, por isso podem estar desatualizadas no exato momento da consulta.
+             <br><br>
+             By: Genial Financeira
+                </div>
+                <div class="fundo">
+      <img src="/VFX/FUNDO 3.png" alt="Genial Logo" >
+      </div>   
+        </font> 
+        <body> 
+        </html>
