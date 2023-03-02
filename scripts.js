@@ -51,8 +51,8 @@ calculateBtn.addEventListener("click", function() {
   const loanAmountStr = loanAmountInput.value;
   const whatsappContainer = document.getElementById('whatsapp-container');
   const loanTerm = parseFloat(loanTermInput.value);
-  const monthlyRate = parseFloat(interestRates[loanTypeSelect.value][bankSelect.value]);
-  const loanAmount = Number(loanAmountStr.replace(/\D/g, ''))/100;
+  const monthlyRate = parseFloat(interestRate[loanTypeSelect.value][bankSelect.value]);
+  const loanAmount = Number(loanAmountStr.replace(/\./g, '').replace(',', '.'))/100;
   const totalPayment = loanAmount*((1 + monthlyRate)**loanTerm);
   resultEl.innerHTML = currencyFormat.format(totalPayment / loanTerm);
   totalResultEl.innerHTML = currencyFormat.format(totalPayment);
