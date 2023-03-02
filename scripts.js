@@ -58,7 +58,7 @@ calculateBtn.addEventListener("click", function() {
   totalResultEl.innerHTML = currencyFormat.format(totalPayment);
   whatsappContainer.style.display = 'block';
  
-  if(itsNan(totalPayment)) 
+  if(isNan(totalPayment)) 
     resultEl.innerHTML = h8;
     totalResultEl.innerHTML = h9;
 });
